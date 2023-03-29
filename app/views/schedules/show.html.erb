@@ -1,14 +1,15 @@
-<div class="mx-* 0.5 mt-5 mb-5" style="width: 300px;">
-  
-    <p style="color: orange"><%= notice%></p>
+<div class="container">
+  <div class="mx-* 0.5 mt-5 mb-5" style="width: 300px;">
+    
+      <p style="color: orange"><%= notice%></p>
 
 
-    <%= render @schedule %>
+      <%= render @schedule %>
 
-    <div>
-      <%= link_to "Edit this schedule", edit_schedule_path(@schedule),class: 'color;green', class: "btn btn-primary btn-sm mb-4 rounded-0" %> |
-      <%= link_to "Back to schedules", schedules_path, class: "btn btn-primary btn-sm mb-4 rounded-0" %>
-
-      <%= button_to "Destroy this schedule", @schedule, method: :delete, class: "btn btn-primary btn-sm mb-4 rounded-0"  %>
-    </div>
+      <div>
+        <%= link_to "Edit this schedule", edit_schedule_path(@schedule),class: 'color;green', class: "btn btn-primary btn-sm mb-4 rounded-0" %> |
+        <%= link_to "Back to schedules", schedules_path, class: "btn btn-primary btn-sm mb-4 rounded-0" %> |
+        <%= button_to "Destroy this schedule", @schedule, method: :delete, class: "btn btn-danger btn-sm mb-4 rounded-0"  %>
+      </div>
+  </div>
 </div>
